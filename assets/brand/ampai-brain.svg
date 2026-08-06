@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="25 20 402 402" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">AmpAI brain mark</title>
+  <desc id="desc">Open brain formed by dark neural lines, green nodes and one orange node.</desc>
+  <g stroke="#1B2B2E" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M159 47C178 34 197 38 209 52C224 70 216 100 204 129C209 163 214 201 216 237C213 263 205 293 198 324C193 344 213 360 208 376C204 388 197 394 185 395C151 391 116 359 86 325C76 288 69 243 68 200C72 163 84 127 99 106L159 47Z"/>
+    <path d="M99 106L151 177L68 200"/>
+    <path d="M151 177L204 129L216 237L151 177Z"/>
+    <path d="M216 237L145 269L86 325"/>
+    <path d="M216 237L198 324L185 395"/>
+    <path d="M309 47C286 34 266 39 257 56C247 77 255 103 263 129C260 164 255 201 253 236C258 263 265 294 272 324C278 344 256 360 263 377C267 389 274 396 283 395C319 390 353 358 383 325C394 285 401 241 402 199C398 162 386 124 369 102L309 47Z"/>
+    <path d="M369 102L263 129L324 177L402 199"/>
+    <path d="M263 129L253 236L326 267L402 199"/>
+    <path d="M253 236L272 324L283 395"/>
+    <path d="M326 267L383 325"/>
+  </g>
+  <g fill="#1B2B2E">
+    <circle cx="159" cy="47" r="13.5"/><circle cx="204" cy="129" r="14"/><circle cx="151" cy="177" r="14"/><circle cx="68" cy="200" r="14"/><circle cx="216" cy="237" r="14"/><circle cx="86" cy="325" r="14"/><circle cx="198" cy="324" r="14"/><circle cx="185" cy="395" r="14"/>
+    <circle cx="309" cy="47" r="13.5"/><circle cx="369" cy="102" r="14"/><circle cx="263" cy="129" r="14"/><circle cx="253" cy="236" r="14"/><circle cx="326" cy="267" r="14"/><circle cx="383" cy="325" r="14"/><circle cx="272" cy="324" r="14"/><circle cx="283" cy="395" r="14"/>
+  </g>
+  <g fill="#00FE7F" stroke="#1B2B2E" stroke-width="3.6">
+    <circle cx="145" cy="269" r="12.2"/><circle cx="324" cy="177" r="12.2"/><circle cx="402" cy="199" r="13.2"/>
+  </g>
+  <circle cx="99" cy="106" r="14.5" fill="#FF914D"/>
+</svg>
