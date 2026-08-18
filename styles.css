@@ -101,9 +101,9 @@ body.is-scrolled .site-header__inner {
 .button:focus-visible, .text-link:focus-visible, .footer-link:focus-visible, .brand-lockup:focus-visible, .primary-navigation a:focus-visible, .menu-toggle:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 .button--small { min-height: 34px; padding: 0 14px; font-size: 10.5px; }
 .button--dark { background: var(--dark); color: var(--white); }
-.button--dark:hover { background: #294448; }
+.button--dark:hover { background: #00FF7F; border-color: #00FF7F; color: #1A2B2E; }
 .button--outline { background: var(--white); border-color: var(--dark); color: var(--dark); }
-.button--outline:hover { background: var(--dark); color: var(--white); }
+.button--outline:hover { background: #00FF7F; border-color: #00FF7F; color: #1A2B2E; }
 
 .menu-toggle { background: transparent; border: 0; cursor: pointer; display: none; height: 38px; padding: 6px; width: 38px; }
 .menu-toggle span { background: var(--dark); display: block; height: 1.5px; margin: 5px 0; transition: transform 180ms ease; width: 24px; }
@@ -314,13 +314,13 @@ h1 > span, .final-cta h2 > span { display: block; }
   .process-step { padding-bottom: 25px; text-align: left; }
   .process-step .icon-disc { margin: 0 0 10px; }
   .process-step h3, .process-step p { margin-left: 0; max-width: 340px; }
-  .process-connector { height: 23px; justify-content: center; margin: 0 0 2px; width: auto; }
+  .process-connector { height: 23px; justify-content: center; justify-self: start; margin: 0 0 2px; width: 60px; }
   .process-connector svg { display: block; transform: rotate(90deg); }
   .pilot-stages { gap: 20px; grid-template-columns: 1fr; }
   .pilot-stage { text-align: left; }
   .pilot-stage__number { margin-left: 0; }
   .pilot-stage h3, .pilot-stage p { margin-left: 0; max-width: 300px; }
-  .pilot-stage:not(:last-child)::after { border-left: 1px dotted var(--gray-400); border-top: 0; bottom: -20px; left: 14px; right: auto; top: 43px; }
+  .pilot-stage:not(:last-child)::after { display: none; }
   .site-footer__inner { align-items: flex-start; flex-direction: column; gap: 13px; }
 }
 
