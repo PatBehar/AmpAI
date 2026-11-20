@@ -25,3 +25,62 @@
 @media(max-width:1100px) and (min-width:841px){.header-inner{gap:11px}.site-navigation{gap:13px}.site-navigation>a:not(.button){font-size:11px}.brand-lockup{width:148px}.brand-lockup img{width:148px}.language-switch{gap:3px}}
 @media(max-width:840px){.header-inner{gap:10px}.header-controls{margin-left:auto;gap:8px}.language-switch{margin-right:2px}}
 @media(max-width:390px){.language-switch button{padding:6px 4px}.brand-lockup,.brand-lockup img{width:126px}}
+
+/* V5 — QuantumLab-inspired scroll-reveal header. No visible bar at the top. */
+.site-header {
+  position: sticky;
+  top: 10px;
+  z-index: 30;
+  isolation: isolate;
+  width: min(calc(100% - 24px), 1440px);
+  height: 78px;
+  margin: 10px auto 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.site-header::after {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  content: '';
+  pointer-events: none;
+  opacity: 0;
+  border: 1px solid rgba(26, 43, 46, .11);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .78);
+  box-shadow: 0 8px 24px rgba(26, 43, 46, .07);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  transition: opacity .42s cubic-bezier(.2, .72, .24, 1);
+}
+.site-header.is-scrolled::after,
+body.menu-open .site-header::after { opacity: 1; }
+@media (max-width: 1100px) and (min-width: 841px) {
+  .site-header .header-inner { width: min(calc(100% - 48px), var(--shell)); }
+}
+@media (max-width: 840px) {
+  .site-header {
+    top: 8px;
+    width: calc(100% - 16px);
+    height: 70px;
+    margin-top: 8px;
+  }
+  .site-header .header-inner { width: calc(100% - 32px); }
+  .site-navigation {
+    top: 100%;
+    border: 1px solid var(--line);
+    border-radius: 0 0 14px 14px;
+    max-height: calc(100svh - 95px);
+    overflow-y: auto;
+  }
+}
+@media (max-width: 600px) {
+  .site-header .header-inner { width: calc(100% - 20px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header::after { transition: none; }
+}
