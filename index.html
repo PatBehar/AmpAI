@@ -1,264 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="AmpAI connects role-specific learning with real work, helping teams apply AI effectively and leaders see what improved and measure the outcomes."
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-3q0+BR6gvU7rkbtdOdF8UsR0tEmGXfVgh98ftmvDvG4='; font-src 'self'; connect-src 'none'; form-action 'none';"
-    />
-    <script>
-      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-    </script>
-    <title>AmpAI — Applied AI Adoption Platform</title>
-    <link rel="icon" type="image/svg+xml" sizes="any" href="./assets/brand/ampai-brain.svg?v=ampai-favicon-1" />
-    <link rel="shortcut icon" type="image/svg+xml" href="./assets/brand/ampai-brain.svg?v=ampai-favicon-1" />
-    <link rel="stylesheet" href="styles.css?v=landing-surgical-1" />
-  </head>
-  <body>
-    <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <symbol id="ampai-icon-person" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="7" /><path d="M12 38c0-7.2 5.1-12 12-12s12 4.8 12 12" /></symbol>
-        <symbol id="ampai-icon-refresh" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M36 18v-8l-5 5a13 13 0 1 0 3.1 15.5" /><path d="M36 10v8h-8" /></symbol>
-        <symbol id="ampai-icon-bars" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 38V25h7v13M21 38V18h7v20M31 38V10h7v28" /></symbol>
-        <symbol id="ampai-icon-search" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="21" cy="21" r="11" /><path d="m29 29 10 10" /></symbol>
-        <symbol id="ampai-icon-document" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="8" width="22" height="32" rx="2.5" /><path d="M19 17h10M19 23h10M19 29h7" /></symbol>
-        <symbol id="ampai-icon-gear" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m24 8 3 3.2 4.4-1 1.7 4.2 4.3 1.2-.3 4.5 3.3 3-3.3 3 1.2 4.4-4.2 1.7-1.3 4.4-4.5-.3-3 3.3-3-3.3-4.4 1.2-1.7-4.2-4.4-1.3.3-4.5-3.3-3.1 3.3-3-1.2-4.4 4.2-1.7 1.3-4.4 4.5.3L24 8Z" /><circle cx="24" cy="24" r="5.5" /></symbol>
-        <symbol id="ampai-icon-megaphone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 23h7l17-8v18l-17-8h-7v-2Z" /><path d="m18 25 3 10h5l-3-8M38 20v8" /></symbol>
-        <symbol id="ampai-icon-target" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14" /><circle cx="24" cy="24" r="7" /><circle cx="24" cy="24" r="2" /><path d="m24 24 12-12M31 12h5v5" /></symbol>
-        <symbol id="ampai-icon-check" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="14" /><path d="m17 24 5 5 10-11" /></symbol>
-        <symbol id="ampai-icon-arrow" viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h40M34 5l8 7-8 7" /></symbol>
-      </defs>
-    </svg>
-    <header class="site-header">
-      <div class="site-header__inner shell">
-        <a class="brand-lockup" href="#hero" aria-label="AmpAI home">
-          <img class="brand-lockup__brain" src="assets/brand/ampai-brain.svg" alt="" />
-          <span class="brand-lockup__wordmark"><span>Amp</span><span class="brand-lockup__wordmark-accent">AI</span></span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          aria-label="Open navigation"
-          data-menu-toggle
-        >
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation" data-navigation>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#workflow-examples">Workflow Examples</a>
-          <a href="#pilot">Pilot</a>
-          <a
-            class="button button--small button--dark"
-            href="https://www.linkedin.com/company/ampai-platform/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Start a Pilot Conversation
-          </a>
-        </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="description" content="AmpAI brings practical AI learning to individuals and applied AI adoption to organizations. Learn. Apply. Improve." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AmpAI — Learn. Apply. Improve." />
+  <meta property="og:description" content="Practical AI learning for people. Applied AI adoption for teams." />
+  <meta property="og:image" content="assets/ampai-logo.png" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <title>AmpAI — Learn. Apply. Improve.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand-lockup" href="#top" aria-label="AmpAI home"><img src="assets/ampai-logo.png" width="166" height="46" alt="AmpAI" /></a>
+      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" data-menu-toggle><span></span><span></span></button>
+      <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-nav>
+        <a href="#products">Our products</a><a href="#mobile">AmpAI Mobile</a><a href="#business">AmpAI Business</a><a href="#approach">How it works</a>
+        <a class="button button--dark button--small" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AI EDUCATION &amp; APPLIED ADOPTION</p>
+          <h1 id="hero-title">Learn AI.<br /><span class="text-green">Apply it.</span><br />Improve.</h1>
+          <p class="hero-lead">AI learning becomes meaningful when you put it to use. AmpAI helps individuals build practical skills and teams turn those skills into better ways of working.</p>
+          <div class="hero-actions">
+            <a class="button button--dark" href="#mobile">Explore AmpAI Mobile <span aria-hidden="true">↗</span></a>
+            <a class="button button--outline" href="#business">Explore AmpAI Business <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-footnote"><span class="tiny-rule" aria-hidden="true"></span> ONE BRAND. TWO WAYS TO MAKE AI USEFUL.</p>
+        </div>
+        <div class="hero-mark" aria-hidden="true"><div class="hero-mark__halo"></div><img src="assets/ampai-brain.svg" width="360" height="360" alt="" /><span class="hero-mark__node hero-mark__node--one"></span><span class="hero-mark__node hero-mark__node--two"></span></div>
       </div>
-    </header>
-
-    <main>
-      <section class="hero" id="hero">
-        <div class="shell hero__grid">
-          <div class="hero__content reveal reveal--visible">
-            <h1>
-              <span>Turn AI adoption</span>
-              <span class="text-green">into measurable capability<br class="hero-break" />and workflow improvement.</span>
-            </h1>
-            <p class="hero__supporting-copy">
-              AmpAI connects role-specific learning with real work, helping teams apply AI effectively and leaders see what improved and measure the outcomes.
-            </p>
-            <div class="hero__actions">
-              <a
-                class="button button--dark"
-                href="https://www.linkedin.com/company/ampai-platform/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Start a Pilot Conversation
-              </a>
-              <a class="button button--outline" href="#how-it-works">See How AmpAI Works</a>
+    </section>
+    <section class="section section--products" id="products" aria-labelledby="products-title">
+      <div class="shell">
+        <div class="section-topline"><p class="eyebrow">01 / TWO PRODUCTS. ONE PURPOSE.</p><p>Built for people and for the teams they work in.</p></div>
+        <div class="section-heading section-heading--split"><h2 id="products-title">Two paths.<br /><span class="text-green">One direction.</span></h2><p>From your first AI skill to lasting changes in how work gets done, AmpAI connects learning with application.</p></div>
+        <div class="product-grid">
+          <article class="product-card" aria-labelledby="product-mobile-title">
+            <div class="product-card__top"><span class="tag">FOR INDIVIDUALS</span><span class="index">01 / 02</span></div>
+            <div class="product-card__visual product-card__visual--mobile" aria-hidden="true">
+              <div class="compact-phone">
+                <div class="phone-top"><span class="phone-speaker"></span><span class="phone-dot"></span></div>
+                <div class="phone-greeting">YOUR NEXT MISSION</div><div class="phone-big">Discover.<br/>Practice.<br/><b>Progress.</b></div>
+                <div class="phone-progress"><span></span></div>
+                <div class="phone-row"><span class="phone-row__icon">01</span><div><strong>What is AI?</strong><small>Understand the basics</small></div><span class="phone-check">✓</span></div>
+                <div class="phone-row"><span class="phone-row__icon phone-row__icon--muted">02</span><div><strong>Try it in practice</strong><small>Your next step</small></div><span>↗</span></div>
+              </div>
+              <div class="phone-label phone-label--one">SHORT MISSIONS <span>✳</span></div>
+              <div class="phone-label phone-label--two">LEARNING BY DOING <span>↗</span></div>
             </div>
-          </div>
-
-          <div class="hero__visual reveal reveal--visible" data-magnetic-zone>
-            <div class="hero__brain-wrap" data-magnetic>
-              <svg class="brain-svg" viewBox="25 20 402 402" role="img" aria-labelledby="brain-title brain-desc">
-                <title id="brain-title">AmpAI brain mark</title>
-                <desc id="brain-desc">An open brain formed by dark neural lines with green and orange nodes.</desc>
-                <g class="brain-lines" stroke="#1B2B2E" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
-                  <path d="M159 47C178 34 197 38 209 52C224 70 216 100 204 129C209 163 214 201 216 237C213 263 205 293 198 324C193 344 213 360 208 376C204 388 197 394 185 395C151 391 116 359 86 325C76 288 69 243 68 200C72 163 84 127 99 106L159 47Z"/>
-                  <path d="M99 106L151 177L68 200"/>
-                  <path d="M151 177L204 129L216 237L151 177Z"/>
-                  <path d="M216 237L145 269L86 325"/>
-                  <path d="M216 237L198 324L185 395"/>
-                  <path d="M309 47C286 34 266 39 257 56C247 77 255 103 263 129C260 164 255 201 253 236C258 263 265 294 272 324C278 344 256 360 263 377C267 389 274 396 283 395C319 390 353 358 383 325C394 285 401 241 402 199C398 162 386 124 369 102L309 47Z"/>
-                  <path d="M369 102L263 129L324 177L402 199"/>
-                  <path d="M263 129L253 236L326 267L402 199"/>
-                  <path d="M253 236L272 324L283 395"/>
-                  <path d="M326 267L383 325"/>
-                </g>
-                <g class="brain-nodes brain-nodes--dark" fill="#1B2B2E">
-                  <circle cx="159" cy="47" r="13.5"/><circle cx="204" cy="129" r="14"/><circle cx="151" cy="177" r="14"/><circle cx="68" cy="200" r="14"/><circle cx="216" cy="237" r="14"/><circle cx="86" cy="325" r="14"/><circle cx="198" cy="324" r="14"/><circle cx="185" cy="395" r="14"/>
-                  <circle cx="309" cy="47" r="13.5"/><circle cx="369" cy="102" r="14"/><circle cx="263" cy="129" r="14"/><circle cx="253" cy="236" r="14"/><circle cx="326" cy="267" r="14"/><circle cx="383" cy="325" r="14"/><circle cx="272" cy="324" r="14"/><circle cx="283" cy="395" r="14"/>
-                </g>
-                <g class="brain-nodes brain-nodes--green" fill="#00FE7F" stroke="#1B2B2E" stroke-width="3.6">
-                  <circle cx="145" cy="269" r="12.2"/><circle cx="324" cy="177" r="12.2"/><circle cx="402" cy="199" r="13.2"/>
-                </g>
-                <circle class="brain-node--orange" cx="99" cy="106" r="14.5" fill="#FF914D"/>
-              </svg>
+            <div class="product-card__body"><div class="product-heading"><img src="assets/ampai-brain.svg" alt="" width="27" height="27"/><h3 id="product-mobile-title">AmpAI <span>Mobile</span></h3></div><p class="product-lead">Big ideas. Small missions.</p><p>Understand AI in short lessons, practice what you learn and make progress with a Mimo companion along for the journey.</p><div class="product-card__bottom"><span class="status"><span class="status-dot"></span> PRIVATE MVP VALIDATION</span><a class="text-link" href="#mobile">Explore Mobile <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="product-card" aria-labelledby="product-business-title">
+            <div class="product-card__top"><span class="tag">FOR ORGANIZATIONS</span><span class="index">02 / 02</span></div>
+            <div class="product-card__visual product-card__visual--business" aria-hidden="true">
+              <div class="workflow-graphic"><div class="workflow-header"><span class="workflow-square"></span><strong>WORKFLOW IMPROVEMENT</strong><span class="workflow-more">•••</span></div>
+                <div class="workflow-line"><span class="workflow-stepno">01</span><div><small>CONTEXT</small><strong>Understand the work</strong></div><span>✓</span></div>
+                <div class="workflow-line"><span class="workflow-stepno">02</span><div><small>CAPABILITY</small><strong>Learn what matters</strong></div><span>✓</span></div>
+                <div class="workflow-line workflow-line--active"><span class="workflow-stepno">03</span><div><small>EVIDENCE</small><strong>Evaluate what improved</strong></div><span>↗</span></div>
+              </div>
             </div>
-          </div>
+            <div class="product-card__body"><div class="product-heading"><img src="assets/ampai-brain.svg" alt="" width="27" height="27"/><h3 id="product-business-title">AmpAI <span>Business</span></h3></div><p class="product-lead">Learning that changes the work.</p><p>Develop role-specific AI capability, apply it to real workflows and capture evidence that helps teams evaluate and improve.</p><div class="product-card__bottom"><span class="status"><span class="status-dot status-dot--dark"></span> IN DEVELOPMENT</span><a class="text-link" href="#business">Explore Business <span aria-hidden="true">↗</span></a></div></div>
+          </article>
         </div>
-      </section>
-
-      <section class="section section--problem" id="problem">
-        <div class="shell">
-          <div class="section-heading reveal">
-            <p class="eyebrow">02 · THE PROBLEM</p>
-            <h2><span>AI adoption creates value when</span> <span class="text-green">improvement becomes measurable and repeatable.</span></h2>
-          </div>
-          <div class="problem-grid">
-            <article class="info-card reveal">
-              <div class="icon-disc icon-disc--dark"><svg class="icon"><use href="#ampai-icon-person" xlink:href="#ampai-icon-person"></use></svg></div>
-              <div><h3>Learning is disconnected from real work.</h3><p>Training is generic and not tied to the workflows and decisions that drive impact.</p></div>
-            </article>
-            <article class="info-card reveal">
-              <div class="icon-disc icon-disc--dark"><svg class="icon"><use href="#ampai-icon-refresh" xlink:href="#ampai-icon-refresh"></use></svg></div>
-              <div><h3>Experimentation does not become repeatable capability.</h3><p>Pilots stay isolated. Good ideas do not spread, and habits do not change.</p></div>
-            </article>
-            <article class="info-card reveal">
-              <div class="icon-disc icon-disc--dark"><svg class="icon"><use href="#ampai-icon-bars" xlink:href="#ampai-icon-bars"></use></svg></div>
-              <div><h3>Leaders lack credible evidence of improvement.</h3><p>Usage is common, but measurable workflow and business impact is not clear.</p></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--process" id="how-it-works">
-        <div class="shell">
-          <div class="section-heading section-heading--compact reveal">
-            <p class="eyebrow">03 · HOW AMPAI WORKS</p>
-          </div>
-          <div class="process-track" data-process>
-            <article class="process-step reveal">
-              <div class="icon-disc icon-disc--large"><svg class="icon"><use href="#ampai-icon-search" xlink:href="#ampai-icon-search"></use></svg></div>
-              <h3>Understand the work</h3>
-              <p>Identify the workflow, roles and outcomes that matter.</p>
-            </article>
-            <span class="process-connector" aria-hidden="true"><svg><use href="#ampai-icon-arrow" xlink:href="#ampai-icon-arrow"></use></svg></span>
-            <article class="process-step reveal">
-              <div class="icon-disc icon-disc--large"><svg class="icon"><use href="#ampai-icon-person" xlink:href="#ampai-icon-person"></use></svg></div>
-              <h3>Build the capability</h3>
-              <p>Deliver role-specific learning tied to the actual workflow.</p>
-            </article>
-            <span class="process-connector" aria-hidden="true"><svg><use href="#ampai-icon-arrow" xlink:href="#ampai-icon-arrow"></use></svg></span>
-            <article class="process-step reveal">
-              <div class="icon-disc icon-disc--large"><svg class="icon"><use href="#ampai-icon-document" xlink:href="#ampai-icon-document"></use></svg></div>
-              <h3>Apply it to a real workflow</h3>
-              <p>Teams apply AI in the flow of work with guidance and support.</p>
-            </article>
-            <span class="process-connector" aria-hidden="true"><svg><use href="#ampai-icon-arrow" xlink:href="#ampai-icon-arrow"></use></svg></span>
-            <article class="process-step reveal">
-              <div class="icon-disc icon-disc--large"><svg class="icon"><use href="#ampai-icon-bars" xlink:href="#ampai-icon-bars"></use></svg></div>
-              <h3>Measure the improvement</h3>
-              <p>Capture before-and-after evidence and a manager readout to show impact.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--workflows" id="workflow-examples">
-        <div class="shell">
-          <div class="section-heading section-heading--workflow reveal">
-            <p class="eyebrow">04 · WORKFLOW EXAMPLES</p>
-            <h2>Start with one recurring workflow.</h2>
-            <p class="section-support">AmpAI begins with recurring workflows where capability and improvement can be demonstrated with evidence. These are starting points—not the limits of the platform.</p>
-          </div>
-          <div class="workflow-grid">
-            <article class="workflow-card reveal">
-              <div class="icon-disc icon-disc--green"><svg class="icon"><use href="#ampai-icon-gear" xlink:href="#ampai-icon-gear"></use></svg></div>
-              <div><h3>Operational Performance Review &amp; Action Cycle</h3><p>Structure recurring KPI review, root-cause analysis, action ownership and follow-up into a repeatable AI-assisted workflow.</p></div>
-            </article>
-            <article class="workflow-card reveal">
-              <div class="icon-disc icon-disc--green"><svg class="icon"><use href="#ampai-icon-megaphone" xlink:href="#ampai-icon-megaphone"></use></svg></div>
-              <div><h3>Campaign Brief &amp; Quality Review</h3><p>Build AI capability through a repeatable workflow for campaign briefs, quality review and improvement against defined criteria.</p></div>
-            </article>
-            <article class="workflow-card reveal">
-              <div class="icon-disc icon-disc--green"><svg class="icon"><use href="#ampai-icon-target" xlink:href="#ampai-icon-target"></use></svg></div>
-              <div><h3>Sales Pipeline Review</h3><p>Improve recurring pipeline reviews by structuring account context, risks, priorities and next actions into a decision-ready workflow.</p></div>
-            </article>
-          </div>
-          <p class="section-closing-line reveal">Same AmpAI loop across workflows: Context → Capability → Workflow → Evidence → Improvement.</p>
-        </div>
-      </section>
-
-      <section class="section section--outcomes" id="outcomes">
-        <div class="shell">
-          <div class="section-heading section-heading--compact reveal"><p class="eyebrow">05 · WHAT LEADERS CAN SEE</p></div>
-          <div class="outcome-grid">
-            <article class="outcome-item reveal"><svg class="outcome-icon"><use href="#ampai-icon-person" xlink:href="#ampai-icon-person"></use></svg><div><h3>Capability developed</h3><p>Role-specific skills built where they matter most.</p></div></article>
-            <article class="outcome-item reveal"><svg class="outcome-icon"><use href="#ampai-icon-refresh" xlink:href="#ampai-icon-refresh"></use></svg><div><h3>Workflow improved</h3><p>Faster, higher-quality ways of working that stick.</p></div></article>
-            <article class="outcome-item reveal"><svg class="outcome-icon"><use href="#ampai-icon-check" xlink:href="#ampai-icon-check"></use></svg><div><h3>Adoption demonstrated</h3><p>Teams use AI in real work, not just in training.</p></div></article>
-            <article class="outcome-item reveal"><svg class="outcome-icon"><use href="#ampai-icon-bars" xlink:href="#ampai-icon-bars"></use></svg><div><h3>Outcomes supported by evidence</h3><p>Clear before-and-after impact and a manager readout.</p></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--pilot" id="pilot">
-        <div class="shell">
-          <div class="section-heading section-heading--compact reveal"><p class="eyebrow">06 · PILOT</p></div>
-          <div class="pilot-layout">
-            <div class="pilot-copy reveal">
-              <h2>One team.<br />One recurring workflow.<br />One measurable objective.</h2>
-              <p>A structured pilot that delivers learning, application and evidence.</p>
-            </div>
-            <div class="pilot-stages">
-              <article class="pilot-stage reveal"><span class="pilot-stage__number">01</span><h3>Role-specific learning</h3><p>Targeted learning for the people who do the work.</p></article>
-              <article class="pilot-stage reveal"><span class="pilot-stage__number">02</span><h3>Applied workflow project</h3><p>Teams apply AI to an agreed workflow with real deliverables.</p></article>
-              <article class="pilot-stage reveal"><span class="pilot-stage__number">03</span><h3>Evidence captured</h3><p>Before-and-after data and qualitative impact are collected.</p></article>
-              <article class="pilot-stage reveal"><span class="pilot-stage__number">04</span><h3>Manager readout</h3><p>Managers review results and confirm business relevance.</p></article>
-              <article class="pilot-stage reveal"><span class="pilot-stage__number">05</span><h3>Follow-up measurement</h3><p>Reinforce, iterate and expand with confidence.</p></article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--final-cta" id="get-started">
-        <div class="shell">
-          <div class="section-heading section-heading--compact reveal"><p class="eyebrow">07 · GET STARTED</p></div>
-          <div class="final-cta reveal">
-            <h2><span>Ready to turn AI adoption</span> <span class="text-green">into measurable improvement?</span></h2>
-            <a class="button button--dark" href="https://www.linkedin.com/company/ampai-platform/" target="_blank" rel="noopener noreferrer">Start a Pilot Conversation</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="shell site-footer__inner">
-        <a class="brand-lockup brand-lockup--footer" href="#hero" aria-label="AmpAI home">
-          <img class="brand-lockup__brain" src="assets/brand/ampai-brain.svg" alt="" />
-          <span class="brand-lockup__wordmark"><span>Amp</span><span class="brand-lockup__wordmark-accent">AI</span></span>
-        </a>
-        <p>Applied AI Adoption Platform.</p>
-        <a class="footer-link" href="https://www.linkedin.com/company/ampai-platform/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
-    </footer>
-
-    <script src="script.js?v=scroll-top-v7"></script>
-  </body>
+    </section>
+    <section class="section section--way" id="approach" aria-labelledby="way-title">
+      <div class="shell way-grid">
+        <div class="way-text"><p class="eyebrow">02 / THE AMPAI WAY</p><h2 id="way-title">Different paths.<br/><span class="text-green">Same idea.</span></h2><p>Learning should lead somewhere. Not just more information — more confidence, capability and meaningful progress.</p><div class="way-steps"><div><span>01</span><strong>Learn</strong><p>Build understanding through relevant, approachable experiences.</p></div><div><span>02</span><strong>Apply</strong><p>Put what you learn into practice, for yourself or your team.</p></div><div><span>03</span><strong>Improve</strong><p>Use feedback and evidence to make the next attempt better.</p></div></div></div>
+        <div class="way-art" role="img" aria-label="Illustrative comparison of a Mobile learn card and a Business apply card, arranged diagonally on a dark background">
+          <div class="way-gridlines"></div><span class="way-outline way-outline--one"></span><span class="way-outline way-outline--two"></span>
+          <div class="way-art__header"><strong>THE AMPAI WAY</strong><img src="assets/ampai-brain.svg" alt="" width="35" height="35"/></div>
+          <div class="way-card way-card--learn"><span class="way-label"><i class="way-dot way-dot--orange"></i> MOBILE · LEARN</span><h3>Start small.<br/>Learn by doing.</h3><div class="way-mini-row"><b class="way-mini-number">01</b><span><strong>Discover a concept</strong><small>One idea at a time</small></span><b>✓</b></div><div class="way-mini-row"><b class="way-mini-number way-mini-number--mute">02</b><span><strong>Try it yourself</strong><small>Turn knowledge into skill</small></span><b>↗</b></div></div>
+          <div class="way-card way-card--apply"><span class="way-label"><i class="way-dot"></i> BUSINESS · APPLY</span><h3>From learning<br/>to better work.</h3><div class="way-card__flow"><span>Context</span><span>Capability</span><strong>Evidence</strong></div><div class="way-bars"><i></i><i></i><i></i><i></i></div></div>
+          <div class="way-art__footer"><span>CONTEXT</span><i></i><span>CAPABILITY</span><i></i><span>PROGRESS</span></div>
+        </div>
+      </div>
+      <p class="way-caption shell">Illustrative product concept. Not a live product screenshot.</p>
+    </section>
+    <section class="section feature-section" id="mobile" aria-labelledby="mobile-title">
+      <div class="shell feature-grid">
+        <div><p class="eyebrow">03 / AMPAI MOBILE</p><h2 id="mobile-title">Make AI<br/><span class="text-green">click.</span></h2><p class="feature-intro">A more approachable way to learn AI, practice useful skills and see your progress — one mission at a time.</p><div class="list-steps"><div><span>01</span><div><strong>Understand a new idea</strong><p>Small, clear lessons designed around things you can use.</p></div></div><div><span>02</span><div><strong>Try it for yourself</strong><p>Practice with activities and checks that reinforce learning.</p></div></div><div><span>03</span><div><strong>Keep growing</strong><p>Track demonstrated progress and explore with your Mimo.</p></div></div></div><p class="feature-status"><span class="status-dot"></span> Currently in private MVP validation. Not publicly available.</p></div>
+        <div class="mobile-aside"><p class="aside-kicker">LEARNING, ONE STEP AT A TIME</p><div class="mission-panel"><span>YOUR LEARNING JOURNEY</span><h3>Start with curiosity.<br/><b>Build real skills.</b></h3><div class="mission-pill"><b>01</b><span>Learn a new concept</span><span>✓</span></div><div class="mission-pill"><b>02</b><span>Try a practical challenge</span><span>↗</span></div><div class="mission-pill"><b>03</b><span>Review and improve</span><span>↗</span></div></div><div class="mimo-caption"><span>YOUR COMPANIONS</span><p>Mimi · Mr. Morrison · Ramona · Maxine · Frodo</p><small>The five Mimos are AmpAI's approved companions. Artwork will be added from official assets.</small></div></div>
+      </div>
+    </section>
+    <section class="section business-section" id="business" aria-labelledby="business-title"><div class="shell"><div class="business-head"><div><p class="eyebrow">04 / AMPAI BUSINESS</p><h2 id="business-title">Make AI useful<br/><span class="text-green">at work.</span></h2></div><div><p>AI adoption is more than giving teams access to tools or courses. AmpAI Business connects role-specific capability to real workflows and evidence of improvement.</p><span class="status"><span class="status-dot status-dot--dark"></span> BUSINESS PRODUCT IN DEVELOPMENT</span></div></div><div class="business-loop" aria-label="Context, capability, workflow, evidence and improvement"><div><span>01</span><strong>Context</strong><small>Understand the work</small></div><div><span>02</span><strong>Capability</strong><small>Learn what matters</small></div><div><span>03</span><strong>Workflow</strong><small>Apply in context</small></div><div><span>04</span><strong>Evidence</strong><small>Evaluate the work</small></div><div><span>05</span><strong>Improvement</strong><small>Make the next version better</small></div></div><div class="business-values"><article><div class="value-icon">↗</div><h3>Relevant learning</h3><p>Start from a team's work, tools, roles and recurring challenges.</p></article><article><div class="value-icon">✓</div><h3>Practical application</h3><p>Guide a real workflow project with clear steps and feedback.</p></article><article><div class="value-icon">◉</div><h3>Manager visibility</h3><p>Separate capability evidence from adoption and business outcomes.</p></article></div><a href="https://www.linkedin.com/company/ampai-platform/" target="_blank" rel="noopener noreferrer" class="text-link business-contact">Start a business conversation <span aria-hidden="true">↗</span></a></div></section>
+    <section class="section about-section" id="about"><div class="shell about-grid"><div><p class="eyebrow">05 / ABOUT AMPAI</p><h2>Learn.<br/>Apply.<br/><span class="text-green">Improve.</span></h2></div><div class="about-copy"><div class="orange-rule"></div><h3>Learning should change what you can do.</h3><p>AmpAI brings together two experiences built around one idea: AI knowledge matters when it becomes usable capability.</p><p>From individuals practicing their first AI skills to organizations working toward better workflows, the aim is the same — learn something relevant, apply it and keep improving.</p><span>BUILT BY MARCO BEHAR · FOUNDER &amp; CEO</span></div></div></section>
+    <section class="contact-section" id="contact"><div class="shell contact-inner"><div><p class="eyebrow">STAY CONNECTED</p><h2>Be part of<br/><span class="text-green">what's next.</span></h2><p>Explore what we're building, follow AmpAI's progress and start a conversation about applied AI learning.</p><a class="button button--dark" href="https://www.linkedin.com/company/ampai-platform/" target="_blank" rel="noopener noreferrer">Connect with AmpAI <span aria-hidden="true">↗</span></a></div><img src="assets/ampai-brain.svg" width="160" height="160" alt=""/></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#top"><img src="assets/ampai-logo.png" alt="AmpAI" width="124" height="36"/></a><p>Learn. Apply. Improve.</p><span>© <span data-year>2026</span> AmpAI</span></div></footer>
+</body>
 </html>
