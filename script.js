@@ -174,6 +174,13 @@
   }
   controls.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language, true)));
 
+  // Reveal the frosted navigation bar only after leaving the page top.
+  const header = document.querySelector('.site-header');
+  const updateHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 18);
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  window.addEventListener('pageshow', updateHeader);
+  updateHeader();
+
   const button = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
   const syncMenuLabel = () => {
