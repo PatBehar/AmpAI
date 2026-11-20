@@ -8,9 +8,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="AmpAI — Learn. Apply. Improve." />
   <meta property="og:description" content="Practical AI learning for people. Applied AI adoption for teams." />
-  <meta property="og:image" content="assets/ampai-logo.png" />
+  <meta property="og:image" content="https://ampai-landing.pages.dev/assets/ampai-logo.png" />
   <meta name="color-scheme" content="light" />
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="icon" type="image/svg+xml" href="assets/ampai-brain.svg?v=4" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=4" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=4" />
+  <link rel="shortcut icon" href="favicon.ico?v=4" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=4" />
   <title>AmpAI — Learn. Apply. Improve.</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
@@ -20,11 +24,18 @@
   <header class="site-header" id="top">
     <div class="shell header-inner">
       <a class="brand-lockup" href="#top" aria-label="AmpAI home"><img src="assets/ampai-logo.png" width="166" height="46" alt="AmpAI" /></a>
-      <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" data-menu-toggle><span></span><span></span></button>
       <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-nav>
         <a href="#products">Our products</a><a href="#mobile">AmpAI Mobile</a><a href="#business">AmpAI Business</a><a href="#approach">How it works</a>
         <a class="button button--dark button--small" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
       </nav>
+      <div class="header-controls">
+        <div class="language-switch" role="group" aria-label="Choose language" data-language-switch>
+          <button type="button" lang="en" data-language="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" lang="es" data-language="es" aria-pressed="false">ES</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation" data-menu-toggle><span></span><span></span></button>
+      </div>
     </div>
   </header>
   <main id="main">
