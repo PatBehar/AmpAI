@@ -108,3 +108,32 @@ body.menu-open .site-header::after { opacity: 1; }
 }
 .mission-pill .ui-arrow,
 .value-icon .ui-arrow { width: 1.25em; height: 1.25em; }
+
+/* V8 — FormSubmit contact: restrained, accessible, responsive. */
+.contact-grid{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:clamp(30px,6vw,95px);align-items:start}
+.contact-intro{padding-top:23px}
+.contact-intro h2{font-size:clamp(41px,4.25vw,64px);font-weight:630;line-height:1.12;margin:18px 0 18px}
+.contact-intro>p:not(.eyebrow){font-size:15px;line-height:1.72;color:var(--muted);max-width:450px;margin:0 0 25px}
+.contact-linkedin{font-size:12px}
+.ampai-contact-form{min-width:0;padding:clamp(22px,3vw,35px);background:var(--white);border:1px solid var(--line);border-radius:15px;box-shadow:0 11px 36px rgba(26,43,46,.035)}
+.contact-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 15px}
+.contact-field{display:flex;flex-direction:column;gap:9px;min-width:0}
+.contact-field--full{grid-column:1/-1}
+.contact-field>span{font-size:11px;font-weight:750;letter-spacing:.012em;color:var(--ink)}
+.contact-field input,.contact-field select,.contact-field textarea{display:block;width:100%;max-width:100%;min-height:46px;padding:11px 13px;border:1px solid #D5DFDA;background:#FBFCFB;border-radius:8px;color:var(--ink);font:inherit;font-size:14px;line-height:1.5;outline:none;transition:border-color .2s,box-shadow .2s}
+.contact-field textarea{min-height:130px;resize:vertical}
+.contact-field input:focus-visible,.contact-field select:focus-visible,.contact-field textarea:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-color:var(--ink)}
+.contact-field input:user-invalid,.contact-field select:user-invalid,.contact-field textarea:user-invalid{border-color:#B85635}
+.contact-form-actions{margin-top:20px}
+.contact-send{gap:27px;cursor:pointer;min-width:172px;justify-content:space-between}
+.contact-send:disabled{opacity:.62;cursor:wait;transform:none}
+.contact-form-status{font-size:12px;line-height:1.55;font-weight:650;min-height:0;margin:12px 0 0}
+.contact-form-status:empty{display:none}
+.contact-form-status[data-status="success"]{color:#126B44}
+.contact-form-status[data-status="error"]{color:#A44731}
+.contact-form-privacy{font-size:11px;line-height:1.6;color:var(--muted);max-width:520px;margin:16px 0 0}
+.contact-honeypot{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(min-width:1360px){.contact-intro h2{font-size:66px}}
+@media(max-width:840px){.contact-grid{grid-template-columns:1fr;gap:28px}.contact-intro{padding-top:0}.ampai-contact-form{padding:clamp(20px,4vw,30px)}.contact-intro h2{font-size:clamp(49px,6.9vw,64px)}}
+@media(max-width:520px){.contact-fields{grid-template-columns:1fr}.contact-field--full{grid-column:1}.contact-send{width:100%}.contact-intro h2{font-size:clamp(45px,10vw,58px)}}
+@media(prefers-reduced-motion:reduce){.contact-field input,.contact-field select,.contact-field textarea{transition:none}}
