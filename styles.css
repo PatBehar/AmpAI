@@ -95,3 +95,16 @@ body.menu-open .site-header::after { opacity: 1; }
 }
 .site-header:not(.is-scrolled):not(:has(.site-navigation.is-open))::after { opacity: 0; }
 .section--products { border-top: none; }
+
+/* V7: device-independent SVG arrows, no iOS emoji font substitution. */
+.ui-arrow {
+  display: inline-block;
+  width: 1.12em;
+  height: 1.12em;
+  flex: 0 0 auto;
+  vertical-align: -0.13em;
+  pointer-events: none;
+  stroke: currentColor;
+}
+.mission-pill .ui-arrow,
+.value-icon .ui-arrow { width: 1.25em; height: 1.25em; }
