@@ -1,6 +1,17 @@
 (() => {
   'use strict';
   const es = {
+  "Have a question about AmpAI Mobile or Business? Tell us what you're looking for, and we'll follow up by email.": "¿Tienes preguntas sobre AmpAI Mobile o Business? Cuéntanos qué buscas y te responderemos por correo.",
+  "Follow AmpAI on LinkedIn": "Sigue a AmpAI en LinkedIn",
+  "Name": "Nombre",
+  "Email": "Correo electrónico",
+  "What are you interested in?": "¿Qué te interesa?",
+  "Select a topic": "Selecciona un tema",
+  "General inquiry": "Consulta general",
+  "Company (optional)": "Empresa (opcional)",
+  "Message": "Mensaje",
+  "Send message": "Enviar mensaje",
+  "We use your information to reply to your inquiry via FormSubmit.co, which retains submissions for 30 days. Please don't include sensitive information.": "Usamos tus datos para responder a tu consulta mediante FormSubmit.co, que conserva los envíos durante 30 días. No incluyas información sensible.",
   "Skip to content": "Saltar al contenido",
   "Our products": "Productos",
   "How it works": "Cómo funciona",
@@ -201,6 +212,54 @@
   document.addEventListener('click', e => { if (nav?.classList.contains('is-open') && !nav.contains(e.target) && !button?.contains(e.target)) setOpen(false); });
   const breakpoint = window.matchMedia('(min-width: 841px)');
   breakpoint.addEventListener?.('change', e => {if (e.matches) setOpen(false);});
+
+  const contactForm = document.querySelector('[data-contact-form]');
+  const contactStatus = contactForm?.querySelector('[data-contact-status]');
+  const sendButton = contactForm?.querySelector('[data-contact-submit]');
+  const sendLabel = contactForm?.querySelector('[data-contact-send-label]');
+  const contactMessages = {
+    en: {sending:'Sending…',success:'Message submitted. Thank you — we will follow up by email.',pending:'Form activation is pending. Please try again later.',error:'We could not send your message. Please try again.',send:'Send message'},
+    es: {sending:'Enviando…',success:'Mensaje enviado. Gracias — te responderemos por correo.',pending:'El formulario está pendiente de activación. Intenta nuevamente más adelante.',error:'No pudimos enviar tu mensaje. Inténtalo de nuevo.',send:'Enviar mensaje'}
+  };
+  const setContactStatus = (type, message) => {
+    if (!contactStatus) return;
+    contactStatus.dataset.status = type;
+    contactStatus.textContent = message;
+  };
+  contactForm?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!contactForm.reportValidity() || sendButton?.disabled) return;
+    if (contactForm.elements.namedItem('_honey')?.value) return;
+    const current = contactMessages[language] || contactMessages.en;
+    sendButton.disabled = true;
+    if (sendLabel) sendLabel.textContent = current.sending;
+    setContactStatus('sending', current.sending);
+    try {
+      const endpoint = new URL(contactForm.action);
+      if (endpoint.origin !== 'https://formsubmit.co') throw new Error('Invalid endpoint');
+      const result = await fetch('https://formsubmit.co/ajax/' + endpoint.pathname.slice(1), {
+        method:'POST',
+        headers:{'Accept':'application/json'},
+        body:new FormData(contactForm)
+      });
+      const payload = await result.json();
+      const ok = payload?.success === true || payload?.success === 'true';
+      const detail = String(payload?.message || '');
+      if (!result.ok || !ok) {
+        const pending = /activat|confirm|verif|check your inbox/i.test(detail);
+        setContactStatus('error',pending ? current.pending : current.error);
+        return;
+      }
+      contactForm.reset();
+      setContactStatus('success',current.success);
+    } catch (error) {
+      setContactStatus('error',current.error);
+    } finally {
+      sendButton.disabled = false;
+      if (sendLabel) sendLabel.textContent = (contactMessages[language] || contactMessages.en).send;
+    }
+  });
+
   document.querySelectorAll('[data-year]').forEach(el => el.textContent = String(new Date().getFullYear()));
   setLanguage(language);
 })();
