@@ -134,7 +134,7 @@
   "School / company (optional)": "Colegio / empresa (opcional)",
   "Explore AmpAI Edu": "Explorar AmpAI Edu",
   "Explore Edu": "Explorar Edu",
-  "FOR SCHOOLS": "PARA COLEGIOS",
+  "AI FOR STUDENTS": "IA PARA ESTUDIANTES",
   "SCHOOL LEARNING": "APRENDIZAJE ESCOLAR",
   "Learn AI responsibly.": "Aprende IA con responsabilidad.",
   "AI literacy": "Alfabetización en IA",
