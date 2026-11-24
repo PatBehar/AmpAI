@@ -1,14 +1,12 @@
 (() => {
   'use strict';
   const es = {
-  "Have a question about AmpAI Mobile or Business? Tell us what you're looking for, and we'll follow up by email.": "¿Tienes preguntas sobre AmpAI Mobile o Business? Cuéntanos qué buscas y te responderemos por correo.",
   "Follow AmpAI on LinkedIn": "Sigue a AmpAI en LinkedIn",
   "Name": "Nombre",
   "Email": "Correo electrónico",
   "What are you interested in?": "¿Qué te interesa?",
   "Select a topic": "Selecciona un tema",
   "General inquiry": "Consulta general",
-  "Company (optional)": "Empresa (opcional)",
   "Message": "Mensaje",
   "Send message": "Enviar mensaje",
   "We use your information to reply to your inquiry via FormSubmit.co, which retains submissions for 30 days. Please don't include sensitive information.": "Usamos tus datos para responder a tu consulta mediante FormSubmit.co, que conserva los envíos durante 30 días. No incluyas información sensible.",
@@ -20,15 +18,9 @@
   "Learn AI.": "Aprende IA.",
   "Apply it.": "Aplícala.",
   "Improve.": "Mejora.",
-  "AI learning becomes meaningful when you put it to use. AmpAI helps individuals build practical skills and teams turn those skills into better ways of working.": "Aprender IA cobra sentido cuando la pones en práctica. AmpAI ayuda a las personas a desarrollar habilidades útiles y a los equipos a convertirlas en mejores formas de trabajar.",
   "Explore AmpAI Mobile": "Explorar AmpAI Mobile",
   "Explore AmpAI Business": "Explorar AmpAI Business",
-  "ONE BRAND. TWO WAYS TO MAKE AI USEFUL.": "UNA MARCA. DOS FORMAS DE APROVECHAR LA IA.",
-  "01 / TWO PRODUCTS. ONE PURPOSE.": "01 / DOS PRODUCTOS. UN PROPÓSITO.",
-  "Built for people and for the teams they work in.": "Diseñados para las personas y los equipos en los que trabajan.",
-  "Two paths.": "Dos caminos.",
   "One direction.": "Una dirección.",
-  "From your first AI skill to lasting changes in how work gets done, AmpAI connects learning with application.": "Desde tu primera habilidad en IA hasta mejoras duraderas en el trabajo, AmpAI conecta el aprendizaje con la aplicación.",
   "FOR INDIVIDUALS": "PARA PERSONAS",
   "YOUR NEXT LESSON": "TU PRÓXIMA LECCIÓN",
   "Discover.": "Descubre.",
@@ -63,7 +55,6 @@
   "Learn": "Aprende",
   "Build understanding through relevant, approachable experiences.": "Desarrolla comprensión con experiencias relevantes y accesibles.",
   "Apply": "Aplica",
-  "Put what you learn into practice, for yourself or your team.": "Pon en práctica lo aprendido, para ti o para tu equipo.",
   "Improve": "Mejora",
   "Use feedback and evidence to make the next attempt better.": "Usa la retroalimentación y la evidencia para mejorar el siguiente intento.",
   "THE AMPAI WAY": "EL MÉTODO AMPAI",
@@ -102,7 +93,6 @@
   "Review and improve": "Revisa y mejora",
   "YOUR COMPANIONS": "TUS COMPAÑEROS",
   "The five Mimos are AmpAI's approved companions. Artwork will be added from official assets.": "Los cinco Mimos son los compañeros aprobados de AmpAI. Incorporaremos las ilustraciones oficiales.",
-  "04 / AMPAI BUSINESS": "04 / AMPAI BUSINESS",
   "Make AI useful": "Haz útil la IA",
   "at work.": "en el trabajo.",
   "AI adoption is more than giving teams access to tools or courses. AmpAI Business connects role-specific capability to real workflows and evidence of improvement.": "Adoptar IA va más allá de dar acceso a herramientas o cursos. AmpAI Business conecta capacidades específicas de cada rol con procesos reales y evidencia de mejora.",
@@ -119,19 +109,68 @@
   "Manager visibility": "Visibilidad para líderes",
   "Separate capability evidence from adoption and business outcomes.": "Distingue la evidencia de capacidad, la adopción y los resultados de negocio.",
   "Start a business conversation": "Conversemos sobre Business",
-  "05 / ABOUT AMPAI": "05 / SOBRE AMPAI",
   "Learn.": "Aprende.",
   "Apply.": "Aplica.",
   "Learning should change what you can do.": "Aprender debería cambiar lo que puedes hacer.",
-  "AmpAI brings together two experiences built around one idea: AI knowledge matters when it becomes usable capability.": "AmpAI reúne dos experiencias basadas en una misma idea: el conocimiento de IA importa cuando se convierte en una capacidad útil.",
-  "From individuals practicing their first AI skills to organizations working toward better workflows, the aim is the same — learn something relevant, apply it and keep improving.": "Desde personas que practican sus primeras habilidades de IA hasta organizaciones que buscan mejores procesos, el objetivo es el mismo: aprender algo relevante, aplicarlo y seguir mejorando.",
   "BUILT BY MARCO BEHAR · FOUNDER & CEO": "CREADO POR MARCO BEHAR · FUNDADOR Y CEO",
   "STAY CONNECTED": "SIGAMOS EN CONTACTO",
   "Be part of": "Sé parte de",
   "what's next.": "lo que viene.",
   "Explore what we're building, follow AmpAI's progress and start a conversation about applied AI learning.": "Conoce lo que estamos construyendo, sigue el avance de AmpAI y conversemos sobre aprendizaje y adopción aplicada de IA.",
   "Connect with AmpAI": "Conecta con AmpAI",
-  "Learn. Apply. Improve.": "Aprende. Aplica. Mejora."
+  "Learn. Apply. Improve.": "Aprende. Aplica. Mejora.",
+  "AI learning becomes meaningful when you put it to use. AmpAI helps people, schools and teams build practical AI skills and apply them responsibly.": "Aprender IA cobra sentido cuando la pones en práctica. AmpAI ayuda a personas, colegios y equipos a desarrollar habilidades prácticas de IA y aplicarlas responsablemente.",
+  "ONE BRAND. THREE WAYS TO MAKE AI USEFUL.": "UNA MARCA. TRES FORMAS DE APROVECHAR LA IA.",
+  "01 / THREE PRODUCTS. ONE PURPOSE.": "01 / TRES PRODUCTOS. UN PROPÓSITO.",
+  "Built for people, schools and organizations.": "Diseñados para personas, colegios y organizaciones.",
+  "Three paths.": "Tres caminos.",
+  "From your first AI skill to classroom learning and better workflows, AmpAI connects learning with application.": "Desde tu primera habilidad en IA hasta el aprendizaje en el aula y mejores procesos de trabajo, AmpAI conecta el aprendizaje con la aplicación.",
+  "Put what you learn into practice in daily life, at school or at work.": "Pon en práctica lo aprendido en la vida diaria, en el colegio o en el trabajo.",
+  "05 / AMPAI BUSINESS": "05 / AMPAI BUSINESS",
+  "06 / ABOUT AMPAI": "06 / SOBRE AMPAI",
+  "AmpAI brings together three experiences built around one idea: AI knowledge matters when it becomes usable capability.": "AmpAI reúne tres experiencias basadas en una misma idea: el conocimiento de IA importa cuando se convierte en una capacidad útil.",
+  "From individuals learning their first AI skills to students building responsible habits and organizations improving workflows, the aim is the same — learn something relevant, apply it and keep improving.": "Desde personas que aprenden sus primeras habilidades de IA hasta estudiantes que desarrollan hábitos responsables y organizaciones que mejoran sus procesos, el objetivo es el mismo: aprender algo relevante, aplicarlo y seguir mejorando.",
+  "Have a question about AmpAI Mobile, Edu or Business? Tell us what you're looking for, and we'll follow up by email.": "¿Tienes preguntas sobre AmpAI Mobile, Edu o Business? Cuéntanos qué buscas y te responderemos por correo.",
+  "School / company (optional)": "Colegio / empresa (opcional)",
+  "Explore AmpAI Edu": "Explorar AmpAI Edu",
+  "Explore Edu": "Explorar Edu",
+  "FOR SCHOOLS": "PARA COLEGIOS",
+  "SCHOOL LEARNING": "APRENDIZAJE ESCOLAR",
+  "Learn AI responsibly.": "Aprende IA con responsabilidad.",
+  "AI literacy": "Alfabetización en IA",
+  "Safe, responsible use": "Uso seguro y responsable",
+  "Critical thinking": "Pensamiento crítico",
+  "Students": "Estudiantes",
+  "Teachers": "Docentes",
+  "Parents": "Familias",
+  "AI learning for the next generation.": "Aprendizaje de IA para la próxima generación.",
+  "A school-focused platform in development, designed around age-appropriate AI literacy, critical thinking and responsible use.": "Una plataforma escolar en desarrollo, diseñada para enseñar IA según la edad, fomentar el pensamiento crítico y promover su uso responsable.",
+  "04 / AMPAI EDU": "04 / AMPAI EDU",
+  "Prepare students": "Prepara a los estudiantes",
+  "for a world with AI.": "para un mundo con IA.",
+  "AmpAI Edu is being designed to help schools teach AI progressively, from foundational concepts to responsible application, with a connected experience for students, teachers and families.": "AmpAI Edu se está diseñando para ayudar a los colegios a enseñar IA de forma progresiva, desde los conceptos básicos hasta su aplicación responsable, conectando a estudiantes, docentes y familias.",
+  "EDUCATION PRODUCT IN DEVELOPMENT": "PRODUCTO EDUCATIVO EN DESARROLLO",
+  "THE PLANNED SCHOOL EXPERIENCE": "LA EXPERIENCIA ESCOLAR PROPUESTA",
+  "Student App": "Aplicación del estudiante",
+  "Age-appropriate lessons, activities, assessments and applied projects.": "Lecciones, actividades, evaluaciones y proyectos aplicados adecuados a cada edad.",
+  "Teacher Dashboard": "Panel docente",
+  "Class assignments, learning evidence, feedback and guidance for responsible AI use.": "Asignación de actividades, evidencia de aprendizaje, retroalimentación y orientación sobre el uso responsable de IA.",
+  "Parent Portal": "Portal de familias",
+  "Authorized visibility into learning progress and practical guidance for AI use at home.": "Visibilidad autorizada del avance educativo y orientación práctica para el uso de IA en casa.",
+  "A progressive curriculum": "Un currículo progresivo",
+  "Discover": "Descubrir",
+  "Foundations and safety": "Fundamentos y seguridad",
+  "Explore": "Explorar",
+  "Understanding and verification": "Comprensión y verificación",
+  "Responsible academic use": "Uso académico responsable",
+  "Create": "Crear",
+  "Projects and critical thinking": "Proyectos y pensamiento crítico",
+  "Designed for school computers first, with responsive access on tablets and phones.": "Diseñada principalmente para computadoras escolares, con acceso adaptable en tablets y teléfonos.",
+  "Safety, privacy and academic integrity are core design priorities.": "La seguridad, la privacidad y la integridad académica son prioridades centrales del diseño.",
+  "Curriculum levels are illustrative and will be validated with educators.": "Los niveles curriculares son ilustrativos y se validarán con educadores.",
+  "Discuss a school pilot": "Conversemos sobre un piloto escolar",
+  "Illustrative concept — not a live product screenshot.": "Concepto ilustrativo: no es una captura real del producto.",
+  "For institutional inquiries, please do not include student personal data.": "Para consultas institucionales, no incluyas datos personales de estudiantes."
 };
   const originalTextNodes = [];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -161,9 +200,9 @@
   const titleEn = document.title;
   const titleEs = 'AmpAI — Aprende. Aplica. Mejora.';
   const metaFields = [
-    {selector:'meta[name="description"]', es:'AmpAI conecta el aprendizaje práctico de IA para personas con la adopción aplicada para organizaciones. Aprende. Aplica. Mejora.'},
+    {selector:'meta[name="description"]', es:'AmpAI conecta el aprendizaje práctico de IA para personas y colegios con la adopción aplicada para organizaciones. Aprende. Aplica. Mejora.'},
     {selector:'meta[property="og:title"]', es:titleEs},
-    {selector:'meta[property="og:description"]', es:'Aprendizaje práctico de IA para personas. Adopción aplicada de IA para equipos.'}
+    {selector:'meta[property="og:description"]', es:'Aprendizaje práctico de IA para personas y colegios. Adopción aplicada de IA para equipos.'}
   ].map(({selector,es}) => { const el = document.querySelector(selector);return {el,es,en:el?.getAttribute('content')}; });
   const controls = [...document.querySelectorAll('[data-language]')];
   let language = 'en';
@@ -210,10 +249,14 @@
   nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
   document.addEventListener('keydown', e => {if (e.key === 'Escape') setOpen(false);});
   document.addEventListener('click', e => { if (nav?.classList.contains('is-open') && !nav.contains(e.target) && !button?.contains(e.target)) setOpen(false); });
-  const breakpoint = window.matchMedia('(min-width: 841px)');
+  const breakpoint = window.matchMedia('(min-width: 1021px)');
   breakpoint.addEventListener?.('change', e => {if (e.matches) setOpen(false);});
 
   const contactForm = document.querySelector('[data-contact-form]');
+  document.querySelectorAll('[data-interest]').forEach(link => link.addEventListener('click', () => {
+    const field = contactForm?.elements.namedItem('interest');
+    if (field) field.value = link.dataset.interest;
+  }));
   const contactStatus = contactForm?.querySelector('[data-contact-status]');
   const sendButton = contactForm?.querySelector('[data-contact-submit]');
   const sendLabel = contactForm?.querySelector('[data-contact-send-label]');
