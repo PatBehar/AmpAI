@@ -1,28 +1,25 @@
-# AmpAI landing page — Version 1 local review
+# AmpAI Landing V3
 
-This is the first local review build of the AmpAI public landing page. It is a static website using the approved English copy, brand palette, motion rules and CTA behavior from the Notion build specification.
+Founder-approved AmpAI public EdTech marketing website. One brand, two product lines:
+- AmpAI Mobile — gamified practical AI learning, currently in private MVP validation.
+- AmpAI Business — applied enterprise AI adoption, currently in development (product work paused).
 
-## Run locally
+## Source
 
-From this folder, run:
+Static HTML, CSS and JS. No framework, backend, package installation, analytics or forms.
+The public source is the existing GitHub repository PatBehar/AmpAI.
+Visual identity: official AmpAI assets and exact brand palette #1A2B2E / #00FF7F / #FF914D / white.
 
-```bash
-python3 -m http.server 8000
-```
+## Preview locally
 
-Then open [http://localhost:8000](http://localhost:8000).
+Run `python3 -m http.server 8000` and visit http://localhost:8000.
 
-The site is intentionally dependency-free. It does not use a framework, build command, backend, analytics, cookies, forms, tracking or paid services.
+## Deploy on Cloudflare Pages
 
-## Review gates
+Connect PatBehar/AmpAI, production branch `feat/ampai-landing-v3-cloudflare` until approved production cutover. Build command: empty, output directory: / (repository root). Default HTTPS, no Cloudflare Access needed for this public marketing page.
 
-- Review desktop, tablet and mobile widths.
-- Check keyboard focus and navigation.
-- Check the page with reduced motion enabled.
-- Confirm every `Start a Pilot Conversation` link opens the official AmpAI LinkedIn page in a new tab.
-- Confirm `See How AmpAI Works` scrolls to the process section.
-- Do not publish or package for GitHub Pages until the local version is approved.
+## Release safety
 
-## Brand implementation note
+Do not merge to `main` or disable GitHub Pages until Cloudflare V3 is serving correctly. The current repository is PUBLIC. To convert it to private, first confirm Cloudflare Pages works independently because GitHub Pages availability may change. Update code/marketing statuses only with Founder approval. Do not present Mobile as publicly launched or Business as validated/live.
 
-The confirmed production palette is `#1B2B2E`, `#FF914D` and `#00FE7F` on a white canvas. Codec Pro is the approved typeface; the local fallback is documented in `assets/fonts/README.md` because licensed font files were not supplied in this checkout.
+The five official Mimos illustrations are not yet embedded; no unapproved substitute mascots are used.
